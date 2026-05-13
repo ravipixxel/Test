@@ -1,4 +1,22 @@
+# CCSDS-123.0-B-2 On-Board Compression Architecture Analysis
+## Mission & Standard Context
 
+| | Firefly (FF) | JTYU |
+|---|---|---|
+| **Target Standard** | CCSDS-123.0-B-2 (mandated) | CCSDS-123.0-B-2 (same core) |
+| **Compression Mode — Phase 1** | Lossless (PAVI-CORE-COMPRESSION-001) | Lossless |
+| **Compression Mode — Phase 2** | Near-Lossless (PAVI-CORE-COMPRESSION-004) | TBD |
+| **Bands (NZ)** | 50–64 (hyperspectral) | 2–8 (pan + multispectral) |
+| **Chip** | ZU7EG | ZU17EG |
+
+> **Note on Tsigkanos et al. (3.3 Gbps, IEEE TETC 2021):** This paper implements CCSDS-123.0-**B-1** on a Virtex-5QV space-grade FPGA.
+> It is used here as the **architectural reference** for C-slow retiming and BIP ordering on the predictor.
+> The B-1 and B-2 predictor weight-update feedback loop is structurally identical — C-slow retiming, the
+> spectral slice buffer, and the BIP task-level parallelism argument all transfer directly to our B-2 predictor.
+> B-2 adds near-lossless mode and a hybrid entropy coder; neither changes the feedback loop that C-slow targets.
+> Our RTL target is B-2. The paper is a proof point, not the standard we are implementing.
+
+---
 ***
 
 ## CCSDS-123 Architecture: TODAY vs FUTURE
