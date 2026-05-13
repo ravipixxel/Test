@@ -132,3 +132,47 @@
 | **GSS decompressor** | **No change needed** | **New decode path required** - coordinate before committing |
 | **RTL complexity** | Two C-slow paths to manage (predictor + encoder) | C-slow predictor + new BA encoder + demux FIFO; encoder itself is simpler (no feedback FSM) |
 | **What's new vs. today** | bil_to_bip_reorder.v (NEW); weightmem, sigma_mem, kz_mem become NZ-deep LUTRAM arrays; FID buffer replaced by Tsigkanos local diff vector (2,850 bits LUTRAM); C-slow register banking | Same predictor changes as Option A + new block-adaptive encoder mo
+
+
+## Requirement Compliance Notes
+
+### PAVI-CORE-COMPRESSION-003 — Pixel Sampling in FID Mode
+> *"The design of the compression core assumes that pixel data shall be sampled in FID mode."*
+
+**Status for NZ=1 (current verified baseline):** ✅ Compliant — NZ=1 FID collapses to raster order;
+the current RTL ingests data in FID mode with zero reorder buffer cost.
+
+**Status for NZ=50 (Option A / Option C, C-slow multi-band):** ⚠️ Architecture transition required.
+
+The Tsigkanos et al. (B-1, Virtex-5QV) paper demonstrates that **BIP ordering is the optimal input
+format for C-slow retiming** — it provides NZ–1 pipeline stages of slack in the weight-update feedback
+loop, eliminating the need for the FID diagonal traversal entirely for multi-band operation. Under BIP:
+- All spatial neighbours (N, W, NW, NE) are delivered by the 4-FIFO spectral slice buffer (2 BRAM18s)
+- All spectral neighbours (d(z-1)) are available in the Tsigkanos local-diff vector (2,850 bits LUTRAM)
+- No inter-iteration pipeline stall occurs — same real-time guarantee as FID, different mechanism
+
+The **BIL→BIP reorder module** (`bil_to_bip_reorder.v`, PING buffer = 1,600 Kbits = 89 BRAM18s)
+replaces the FID diagonal traversal for multi-band. This satisfies the **spirit** of PAVI-CORE-COMPRESSION-003
+(real-time, no pipeline stall) while adopting the architecturally superior BIP ordering proven in the
+Tsigkanos paper for NZ ≥ 14.
+
+> **Action required:** Update PAVI-CORE-COMPRESSION-003 wording to reflect BIP as the
+> multi-band ingestion mode, with FID retained as the NZ=1 single-band baseline.
+
+---
+
+### PAVI-CORE-COMPRESSION-004 — On-Board Near-Lossless Compression
+> *"The second implementation of compression core shall focus on the lossy variant of CCSDS-123.0-B-2 standard."*
+
+**Status:** 🔵 Phase 2 — not yet designed. Planned after lossless (PAVI-CORE-COMPRESSION-001) is verified.
+
+Near-lossless in CCSDS-123.0-B-2 adds:
+- **Sample representatives** `s_hat(z,y,x)` with absolute error bound parameter `A`
+- **Quantization** of prediction residuals before entropy coding
+- The predictor weight-update feedback loop structure is **unchanged** — C-slow retiming
+  applies identically to near-lossless mode
+- The encoder (Option A sample-adaptive or Option C block-adaptive) is also unchanged;
+  only the mapper and residual quantization step differ
+
+No additional BRAM or DSP resources are anticipated for near-lossless vs lossless at NZ=50.
+The `A` parameter register simply gates the quantization step before the mapper.
