@@ -24,7 +24,7 @@
 
 **Using both PL-DDR4 and PS-DDR4, with 3 SSDs: ~5.1 GB/s**
 This is discussed below, after the 2 SSD discussion is complete.
-Search for  "3-SSD Configurations: PL DDR4 + PS DDR4"
+**Search for  "3-SSD Configurations: PL DDR4 + PS DDR4"**
 
 ---
 
