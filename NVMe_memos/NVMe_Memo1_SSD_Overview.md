@@ -102,6 +102,8 @@ Micron 7450 MAX https://www.storagereview.com/news/micron-7450-ssd-announced
 <img width="393" height="306" alt="image" src="https://github.com/user-attachments/assets/0145b072-3c28-47c1-8f76-c7b229b62791" />
 
 Micron 9400 MAX  https://www.storagereview.com/review/micron-9400-pro-ssd-review
+<img width="419" height="283" alt="image" src="https://github.com/user-attachments/assets/b2ffd7eb-2004-4e5c-92d6-dc49ed22b0c1" />
+
 
 Samsung PM9A3 https://www.storagereview.com/review/samsung-pm9a3-ssd-review
 
