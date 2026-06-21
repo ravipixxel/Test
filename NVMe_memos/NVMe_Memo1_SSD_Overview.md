@@ -91,6 +91,8 @@ https://www.storagereview.com/review/samsung-970-evo-plus-2tb-review
 
 Samsung 990 Pro 2TB:
 
+Rs. 66K in India now https://mdcomputers.in/product/samsung-990-pro-2tb-nvme-ssd-mz-v9p2t0bw
+
 https://www.storagereview.com/review/samsung-990-pro-ssd-review-2tb
 <img width="850" height="401" alt="image" src="https://github.com/user-attachments/assets/36d1732c-51a4-40d1-9c20-836a56c14de7" />
 
