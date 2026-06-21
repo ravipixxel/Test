@@ -86,6 +86,13 @@ Samsung 970 EVO Plus:
 https://www.amazon.in/Samsung-970-EVO-Plus-MZ-V7S1T0B/dp/B07MFZY2F2
 
 https://www.storagereview.com/review/samsung-970-evo-plus-1tb-review
+<img width="850" height="401" alt="image" src="https://github.com/user-attachments/assets/50190898-681e-4641-bcfe-190f64a004ff" />
+
+
+Samsung 990 Pro 2TB:
+
+https://www.storagereview.com/review/samsung-990-pro-ssd-review-2tb
+<img width="850" height="401" alt="image" src="https://github.com/user-attachments/assets/36d1732c-51a4-40d1-9c20-836a56c14de7" />
 
 
 ### Enterprise/Datacenter SSD Examples
