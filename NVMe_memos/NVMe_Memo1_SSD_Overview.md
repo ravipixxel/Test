@@ -73,13 +73,13 @@ Sustained high write speeds to SSDs depend entirely on the type of SSD. Only ent
 
 ### Consumer SSD Example: Samsung 970 Evo Plus
 
-Shane Colton used the Samsung 970 Evo Plus 2TB:
+Shane Colton used the Samsung 970 Evo Plus 1TB:
 - 42 GB of "TurboWrite" SLC cache capacity
 - Initial write speed inside cache: ~2.5 GB/s
 - Once cache was exhausted: sustained write speed dropped to **1.7 GB/s**
 - This 1.7 GB/s held steady from cache exhaustion all the way to drive full
 
-**Always use the largest capacity version of any SSD — 1TB or 2TB minimum.** Larger drives have more NAND dies, giving more internal write parallelism and significantly higher sustained post-cache TLC write speeds (e.g., 970 Evo Plus 2TB sustains 1.7 GB/s post-cache vs 250GB version dropping to ~400 MB/s).
+**Always use the largest capacity version of any SSD — 1TB or 2TB minimum.** Larger drives have more NAND dies, giving more internal write parallelism and significantly higher sustained post-cache TLC write speeds (e.g., 970 Evo Plus 1TB sustains 1.7 GB/s post-cache vs 250GB version dropping to ~400 MB/s).
 
 Samsung 970 EVO Plus:
 
