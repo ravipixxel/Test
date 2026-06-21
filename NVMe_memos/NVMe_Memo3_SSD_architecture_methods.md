@@ -22,6 +22,9 @@
 **Serviceable sensor data rate with 2 SSDs: ~3.4 GB/s**
 (sensor bands may be selectively discarded to match this rate)
 
+**Using both PL-DDR4 and PS DDR4 with 3 SSDs: ~5.1 GB/s**
+This is discussed below, after the 2 SSD discussion is complete
+
 ---
 
 ## Two Independent Data Paths
