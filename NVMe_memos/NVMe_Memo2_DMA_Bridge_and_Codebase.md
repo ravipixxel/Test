@@ -117,7 +117,7 @@ The XDMA Root Port contains three AXI interfaces:
 
 ### How the SSD's DMA Engine Works Through the Bridge
 
-From Shane Colton's blog:
+From Shane Colton's blog: https://scolton.blogspot.com/2019/11/zynq-ultrascale-fatfs-with-bare-metal.html
 
 > "The AXI Master Interface is where *all* NVMe data transfer occurs, for both reads and writes. One way to look at it is that the drive itself contains the DMA engine, which issues memory reads and writes to the system (AXI) memory space through the bridge. The host requests that the drive perform these data transfers by submitting them to a queue, which is also contained in system memory and accessed through this interface."
 
