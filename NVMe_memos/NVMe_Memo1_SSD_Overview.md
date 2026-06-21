@@ -224,22 +224,3 @@ Standard Linux ext4, xfs, exfat. `O_DIRECT` bypasses page cache. exFAT is royalt
 
 ---
 
-## Appendix: XDMA AXI-PCIe Bridge Diagram
-
-See attached PG194 Figure 1 (AMD/Xilinx) — High-Level Bridge Architecture for PCIe Gen3.
-<img width="1168" height="1094" alt="image" src="https://github.com/user-attachments/assets/77711d3d-bfcd-4ffb-8990-183f1615d4dc" />
-<img width="1017" height="640" alt="image" src="https://github.com/user-attachments/assets/2aba09c3-829b-43a0-8108-826594434b77" />
-
-The three AXI interfaces and their roles in NVMe SSD operation:
-
-| Interface | Vivado Port | Who Uses It | Traffic | Purpose |
-|-----------|-------------|-------------|---------|---------|
-| AXI4-Lite → Register Block | S_AXI(L)_CTL | Processor (R5F/A53) | Tiny, init only | PCIe link status, bridge config |
-| AXI Slave → Slave Bridge | S_AXI(B) | Processor (R5F/A53) | Tiny, per-command | NVMe registers, doorbells, queue management |
-| AXI Master → Master Bridge | M_AXI(B) | SSD's DMA engine | **ALL bulk data** | SSD DMA reads/writes memory through this path |
-
-The processor only touches the top two interfaces — both carry tiny control traffic. ALL bulk data (GB/s) flows through the bottom Master Bridge, driven by the SSD's internal DMA engine, not the processor.
-
-Reference documents:
-- PG194: AXI Bridge for PCI Express Gen3 Subsystem v3.0 (what Shane uses — simpler, bridge only)
-- PG195: DMA/Bridge Subsystem for PCIe (adds FPGA-side DMA engine — redundant for NVMe since SSD has its own DMA)
