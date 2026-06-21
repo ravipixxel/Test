@@ -83,26 +83,27 @@ Shane Colton used the Samsung 970 Evo Plus 1TB:
 
 Samsung 970 EVO Plus:
 
--https://www.amazon.in/Samsung-970-EVO-Plus-MZ-V7S1T0B/dp/B07MFZY2F2
+https://www.amazon.in/Samsung-970-EVO-Plus-MZ-V7S1T0B/dp/B07MFZY2F2
 
--https://www.storagereview.com/review/samsung-970-evo-plus-1tb-review
+https://www.storagereview.com/review/samsung-970-evo-plus-1tb-review
 
 ### Enterprise/Datacenter SSD Examples
 
 Form factors: U.2, U.3, some M.2 (but maybe longer)
 
 Models: 
--Micron 7450 MAX https://www.storagereview.com/news/micron-7450-ssd-announced
 
--Micron 9400 MAX https://www.amazon.in/Micron-MTFDKCC12T8TGJ-1BC1ZABYYR-9400-MAX-12-8TB/dp/B0BW69PM5H
+Micron 7450 MAX https://www.storagereview.com/news/micron-7450-ssd-announced
 
--Samsung PM9A3 https://www.galaxus.nl/en/s1/product/samsung-ssd-pm9a3-192-tb-pcie-40-x4-25-data-center-ssd-oem-1920-gb-25-ssd-21973610
+Micron 9400 MAX https://www.amazon.in/Micron-MTFDKCC12T8TGJ-1BC1ZABYYR-9400-MAX-12-8TB/dp/B0BW69PM5H
 
--Samsung PM983 https://www.galaxus.nl/en/s1/product/samsung-pm893-1920-gb-25-ssd-16483427
+Samsung PM9A3 https://www.galaxus.nl/en/s1/product/samsung-ssd-pm9a3-192-tb-pcie-40-x4-25-data-center-ssd-oem-1920-gb-25-ssd-21973610
 
--Kioxia CD8 https://www.galaxus.nl/en/s1/product/kioxia-ssd-cd8-r-25-nvme-7680-gb-7680-gb-ssd-47998337
+Samsung PM983 https://www.galaxus.nl/en/s1/product/samsung-pm893-1920-gb-25-ssd-16483427
 
--Kioxia CM7 https://www.galaxus.nl/en/s1/product/kioxia-ssd-384tb-cm7-r-series-25-pcie-50-3840-gb-25-ssd-40729074
+Kioxia CD8 https://www.galaxus.nl/en/s1/product/kioxia-ssd-cd8-r-25-nvme-7680-gb-7680-gb-ssd-47998337
+
+Kioxia CM7 https://www.galaxus.nl/en/s1/product/kioxia-ssd-384tb-cm7-r-series-25-pcie-50-3840-gb-25-ssd-40729074
 
 ---
 
