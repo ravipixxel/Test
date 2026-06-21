@@ -112,7 +112,7 @@ The XDMA Root Port contains three AXI interfaces:
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-**Key insight for Rakshith:** The processor only touches the top two interfaces — both carry tiny control traffic (KB/s). ALL bulk data (GB/s) flows through the bottom Master Bridge (M_AXI), driven entirely by the SSD's internal DMA engine. The processor never touches the bulk data path.
+**Key insight:** The processor only touches the top two interfaces — both carry tiny control traffic (KB/s). ALL bulk data (GB/s) flows through the bottom Master Bridge (M_AXI), driven entirely by the SSD's internal DMA engine. The processor never touches the bulk data path.
 
 
 ### How the SSD's DMA Engine Works Through the Bridge
