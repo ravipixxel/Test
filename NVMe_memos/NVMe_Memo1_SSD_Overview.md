@@ -227,6 +227,8 @@ Standard Linux ext4, xfs, exfat. `O_DIRECT` bypasses page cache. exFAT is royalt
 ## Appendix: XDMA AXI-PCIe Bridge Diagram
 
 See attached PG194 Figure 1 (AMD/Xilinx) — High-Level Bridge Architecture for PCIe Gen3.
+<img width="1168" height="1094" alt="image" src="https://github.com/user-attachments/assets/77711d3d-bfcd-4ffb-8990-183f1615d4dc" />
+<img width="1017" height="640" alt="image" src="https://github.com/user-attachments/assets/2aba09c3-829b-43a0-8108-826594434b77" />
 
 The three AXI interfaces and their roles in NVMe SSD operation:
 
