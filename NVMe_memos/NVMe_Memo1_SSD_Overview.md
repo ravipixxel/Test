@@ -94,7 +94,15 @@ Samsung 990 Pro 2TB:
 https://www.storagereview.com/review/samsung-990-pro-ssd-review-2tb
 <img width="850" height="401" alt="image" src="https://github.com/user-attachments/assets/36d1732c-51a4-40d1-9c20-836a56c14de7" />
 
+---
 
+The StorageReview sequential write benchmarks above illustrate the consumer SSD cache wall. In the 970 EVO Plus graph, write latency stays low during the initial SLC cache burst phase while throughput climbs quickly. Once the 42 GB TurboWrite cache fills, throughput stabilizes at the native TLC write speed. Both the 1TB and 2TB variants of the 970 EVO Plus converge to approximately the same post-cache sustained throughput of **~1.45 GB/s** with latency settling around **~750 μs**. The 990 Pro 2TB shows the same cache-to-sustained transition pattern but at significantly higher post-cache performance, sustaining **~2.25 GB/s**.
+
+For our continuous satellite sensor recording workload, the SLC cache exhausts within seconds. The vast majority of capture time is spent at post-cache sustained TLC write speed: **~1.45 GB/s** for the 970 EVO Plus, and **~2.25 GB/s** for the 990 Pro 2TB.
+
+Enterprise/datacenter SSDs do not exhibit this behavior. Their sequential write speeds in the datasheets below are the actual sustained speeds from first byte to last — no cache burst, no latency spike, no speed drop. What you see in the spec sheet is what you get continuously.
+
+---
 ### Enterprise/Datacenter SSD Examples
 
 Form factors: U.2, U.3, some M.2 (but maybe longer)
