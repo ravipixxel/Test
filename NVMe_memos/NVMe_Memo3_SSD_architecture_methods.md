@@ -19,15 +19,15 @@
 | PS DDR4 | 1 interface, 8 GB (hardened PS8 controller) |
 | Processor | Quad A53 APU (1.5 GHz) + Dual R5F RPU (600 MHz) |
 
-**Serviceable sensor data rate with 2 SSDs: ~3.4 GB/s**
-*(sensor bands may be selectively discarded to match this rate)
+**Serviceable sensor data rate with 2 SSDs: ~3.4 GB/s** 
+* sensor bands may be selectively discarded to match this rate
 
-**Using both PL-DDR4 and PS-DDR4, with 3 SSDs: ~5.1 GB/s**
-*This is discussed below, after the 2 SSD discussion is complete.
+**Using both PL-DDR4 and PS-DDR4, with 3 SSDs: ~5.1 GB/s** 
+* This is discussed below, after the 2 SSD discussion is complete.
 **Search for  "3-SSD Configurations: PL DDR4 + PS DDR4"**
 
-**Using a better SSD model like Samsung 990 Pro 2TB**
-*In this case, write speed post cache fill ~ 2.25GB/s, so 2-SSD combination gives 4.5 GB/s
+**Using a better SSD model like Samsung 990 Pro 2TB** 
+* In this case, write speed post cache fill ~ 2.25GB/s, so 2-SSD combination gives 4.5 GB/s
 
 ---
 
