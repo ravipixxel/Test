@@ -95,6 +95,7 @@ Samsung 990 Pro 2TB:
 * Samsung 990 Pro SSD seems to be good Consumer Drive with post cache sequential write speed at avg 2.25GB/s
 * is Gen4, while FPGA PCIe Ip is Gen 3(PL side) and Gen2(PS side)
 * Still possible we get this speed if we do a IO_Direct or Baremetal driver test
+* Speed bottleneck is SSD, not Gen 2/3/4 which all have speed ceiling greater than SSD
 
 https://www.storagereview.com/review/samsung-990-pro-ssd-review-2tb
 <img width="850" height="401" alt="image" src="https://github.com/user-attachments/assets/36d1732c-51a4-40d1-9c20-836a56c14de7" />
