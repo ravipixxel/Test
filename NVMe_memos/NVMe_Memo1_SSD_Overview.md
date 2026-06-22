@@ -101,11 +101,12 @@ https://www.storagereview.com/review/samsung-990-pro-ssd-review-2tb
 * is Gen4, while FPGA PCIe Ip is Gen 3(PL side) and Gen2(PS side)
 * Still possible we get this speed if we do a IO_Direct or Baremetal driver test
 * Speed bottleneck is SSD, not Gen 2/3/4 which all have speed ceiling greater than SSD
+
 | PCIe Generation | Speed per ×1 Lane | Total Speed for a ×4 Link |
-| :--- | :--- | :--- |
-| **PCIe Gen 2** | ≈ 500 MB/s | ≈ 2 GB/s |
-| **PCIe Gen 3** | ≈ 1 GB/s | ≈ 4 GB/s |
-| **PCIe Gen 4** | ≈ 2 GB/s | ≈ 8 GB/s |
+|---|---|---|
+| PCIe Gen 2 | ≈ 500 MB/s | ≈ 2 GB/s |
+| PCIe Gen 3 | ≈ 1 GB/s | ≈ 4 GB/s |
+| PCIe Gen 4 | ≈ 2 GB/s | ≈ 8 GB/s |
 
 ---
 
