@@ -26,6 +26,9 @@
 This is discussed below, after the 2 SSD discussion is complete.
 **Search for  "3-SSD Configurations: PL DDR4 + PS DDR4"**
 
+**Using a better SSD model like Samsung 990 Pro 2TB**
+In this case, write speed post cache fill ~ 2.25GB/s, so 2-SSD combination gives 4.5 GB/s
+
 ---
 
 ## Two Independent Data Paths
