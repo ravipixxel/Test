@@ -91,7 +91,10 @@ https://www.storagereview.com/review/samsung-970-evo-plus-2tb-review
 
 Samsung 990 Pro 2TB:
 
-Rs. 66K in India now https://mdcomputers.in/product/samsung-990-pro-2tb-nvme-ssd-mz-v9p2t0bw
+* Rs. 66K in India now https://mdcomputers.in/product/samsung-990-pro-2tb-nvme-ssd-mz-v9p2t0bw
+* Samsung 990 Pro SSD seems to be good Consumer Drive with post cache sequential write speed at avg 2.25GB/s
+* is Gen4, while FPGA PCIe Ip is Gen 3(PL side) and Gen2(PS side)
+* Still possible we get this speed if we do a IO_Direct or Baremetal driver test
 
 https://www.storagereview.com/review/samsung-990-pro-ssd-review-2tb
 <img width="850" height="401" alt="image" src="https://github.com/user-attachments/assets/36d1732c-51a4-40d1-9c20-836a56c14de7" />
