@@ -91,14 +91,21 @@ https://www.storagereview.com/review/samsung-970-evo-plus-2tb-review
 
 Samsung 990 Pro 2TB:
 
+
+
+https://www.storagereview.com/review/samsung-990-pro-ssd-review-2tb
+<img width="850" height="401" alt="image" src="https://github.com/user-attachments/assets/36d1732c-51a4-40d1-9c20-836a56c14de7" />
+
 * Rs. 66K in India now https://mdcomputers.in/product/samsung-990-pro-2tb-nvme-ssd-mz-v9p2t0bw
 * Samsung 990 Pro SSD seems to be good Consumer Drive with post cache sequential write speed at avg 2.25GB/s
 * is Gen4, while FPGA PCIe Ip is Gen 3(PL side) and Gen2(PS side)
 * Still possible we get this speed if we do a IO_Direct or Baremetal driver test
 * Speed bottleneck is SSD, not Gen 2/3/4 which all have speed ceiling greater than SSD
-
-https://www.storagereview.com/review/samsung-990-pro-ssd-review-2tb
-<img width="850" height="401" alt="image" src="https://github.com/user-attachments/assets/36d1732c-51a4-40d1-9c20-836a56c14de7" />
+| PCIe Generation | Speed per ×1 Lane | Total Speed for a ×4 Link |
+| :--- | :--- | :--- |
+| **PCIe Gen 2** | ≈ 500 MB/s | ≈ 2 GB/s |
+| **PCIe Gen 3** | ≈ 1 GB/s | ≈ 4 GB/s |
+| **PCIe Gen 4** | ≈ 2 GB/s | ≈ 8 GB/s |
 
 ---
 
