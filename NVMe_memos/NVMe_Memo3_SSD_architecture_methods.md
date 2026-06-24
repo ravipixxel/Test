@@ -29,6 +29,9 @@
 **Using a better SSD model like Samsung 990 Pro 2TB** 
 * In this case, write speed post cache fill ~ 2.25GB/s, so 2-SSD combination gives 4.5 GB/s
 
+* **2-SSD (Gen4→Gen3 PL):** 2× 990 Pro 2TB on PL XDMA Gen3 x4 → each SSD gets full ~2.25 GB/s (Gen3 ceiling 4 GB/s > SSD speed) → **~4.5 GB/s combined sustained write**
+* **3-SSD (Gen4, 2×Gen3-PL + 1×Gen2-PS):** SSD1+SSD2 on PL Gen3 x4 = ~4.5 GB/s; SSD3 on PS Gen2 x4 = ~1.5–1.8 GB/s (link-limited) → **~6.0–6.3 GB/s combined sustained write**
+
 ---
 
 ## Two Independent Data Paths
